@@ -18,7 +18,7 @@ url: https://refactoring.guru/design-patterns/abstract-factory
 ---
 
 For example: 
-* As an example, seen the [Smart Home Device Management System](../code/abstract_factory/SmartHomeDeviceManagementSystem/README.md)
+* As an example, seen the [Smart Home Device Management System](../code/designpatterns/src/main/java/code/creational/abstract_factory/SmartHomeDeviceManagementSystem/README.md)
 * The families are Bulb, Freezer, Television, WashingMachine
 * These are related with different type of companies
 
@@ -60,13 +60,39 @@ you wouldn't want to change the core code each time it happens.
    represented by the interfaces we extracted previously: Bulb, Freezer,
    Television, WashingMachine and so on.
 
+
+
 4. Now create all the variants of the Abstract Factory which produces the same
    products by variants
 
 5. Use these variants factories to create the families of products
 
 ## Example code
-~/vimwiki/OOPs/code/designpatterns/src/main/java/code/abstract_factory/WebApplication/WebApplication.java
 
-1. [Smart Home Device Management System](../code/designpatterns/src/main/java/code/abstract_factory/SmartHomeDeviceManagementSystem/README.md)
-2. [GUI components](https://refactoring.guru/design-patterns/abstract-factory/java/example)
+1. [Smart Home Device Management System](../code/designpatterns/src/main/java/code/creational/abstract_factory/SmartHomeDeviceManagementSystem/README.md)
+2. [WebApplication](../code/designpatterns/src/main/java/code/creational/abstract_factory/WebApplication/README.md)
+3. [GUI components](https://refactoring.guru/design-patterns/abstract-factory/java/example)
+
+## Applicability
+
+* get rid of TELESCOPING CONSTRUCTOR: meaning overloading the constructors that
+  has multiple params
+* When you want your code to be able to create different representation of some
+  product but has same structure (like: stone house and wooden house)
+
+## Pros and Cons
+
+### Pros
+
+* Products which are from same abstract-factory are compatible with each other
+* Avoid tight coupling
+* SRP: Single Representation Principle
+* OCP: Open Close Principle
+
+### Cons
+
+* more complicated since multiple interfaces and classes are introduced
+
+--- 
+
+END

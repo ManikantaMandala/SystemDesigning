@@ -15,7 +15,7 @@ url: https://refactoring.guru/design-patterns/factory-method
 
 ---
 
-* As an example, seen the [Vehicle Rental System](../code/factory_method/README.md)
+* As an example, seen the [Vehicle Rental System](../code/designpatterns/src/main/java/code/creational/prototype/README.md)
 * In this example, Rental is the superclass.
 * CarRental, BikeRental, TruckRental are subclasses
 * Vehicle is the interface
@@ -37,7 +37,7 @@ Truck too. Here, Is where you have to refactor a lot.
 
 ## Solution
 
-To avide this situation, you need to use factory-method Design Pattern.
+To avoid this situation, you need to use factory-method Design Pattern.
 
 It is suggest that if you replace the direct creation with new operator. with a
 special *Factory Method* which creates the specific type of product you wanted.
@@ -76,17 +76,18 @@ like this,
    
 ## Example Code
 
-1. [Vehicle Rental System](../code/factory_method/README.md)
+1. [Vehicle Rental System](../code/designpatterns/src/main/java/code/creational/factory_method/README.md)
 2. [UI Dialog](https://refactoring.guru/design-patterns/factory-method)
 
 ## Applicability
 
-*  you don’t know beforehand the exact types and dependencies of the objects
-   your code should work with
-*  you want to provide users of your library or framework with a way to extend
-   its internal components.
-*  you want to save system resources by reusing existing objects instead of
-   rebuilding them each time.
+* you don’t know beforehand the exact types and dependencies of the objects
+  your code should work with
+* you want to provide users of your library or framework with a way to extend
+  its internal components.
+* you want to save system resources by reusing existing objects instead of
+  rebuilding them each time.
+
 ## Pros and Cons
 
 Pros:
@@ -96,5 +97,6 @@ Pros:
 
 Cons:
 * Can have complicated classes
+
 ---
 END

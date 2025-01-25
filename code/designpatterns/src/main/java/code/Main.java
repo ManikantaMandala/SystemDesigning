@@ -1,7 +1,7 @@
 package code;
 
-import code.builder.user.Gender;
-import code.builder.user.User;
+import code.creational.builder.user.Gender;
+import code.creational.builder.user.User;
 
 public class Main {
 	public static void main(String[] args) {
