@@ -25,4 +25,9 @@
 2. [Structural Design Pattern](./structural_design_pattern/index.md)
 3. [Behavioural Design Pattern](./behavioural_design_pattern/index.md)
 
+### Low Level System Design
+
+[Steps to follow in LLD/ Machine Coding Round](./lld/instructions_for_lld.md)
+
+1. [Parking Lot Management System](./lld/parking_lot_management_system/README.md)
 

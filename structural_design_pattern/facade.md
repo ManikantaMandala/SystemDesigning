@@ -28,6 +28,3 @@ url: https://refactoring.guru/design-patterns/facade
 ---
 
 END
-
-
-
